@@ -5,46 +5,50 @@
   <title>Franklin, ID | Weather Site</title>
   <meta name="Weather Site" content="This site shows the current weather status.">
   <meta name="viewport" content="width=device-width">
-  <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="/weather/CSS/screenstyle.css" rel="stylesheet" type="text/css" media="screen">
  </head>
  <body>   
         <header>
                 <nav id="page-nav">
 
+               
+                <div id= "header">
+                <img id="logo" src="/images/logo.jpg" alt="weather-site-logo">
+                <h1 id="title">The Weather Site</h1>
+    
+                </div>
                 </nav>
-                <img src="/images/logo.jpg" alt="weather-site-logo">
-                <p>The Weather Site</p>
                </header>
                <main id="main">
                    <section id="locationInfo">
                 <h1>Franklin, Idaho</h1>
-                    <ul>
+                    <ul class="list">
                         <li><strong>Zip:</strong> 83237</li>
                         <li><strong>Elevation:</strong> 1514.246 meters</li>
                         <li><strong>Location:</strong> 111.79, 42.07</li>
-                    </ul>
-                <div class = "Temperature">
-                    <img src = "/images/clear.jpg" alt="weather-site-img">
+                    </ul><br>
+                <section class = "Temperature">
                     <h1><strong>Temperature</strong></h1>
-                    <p><strong>40</strong></p>
+                    <p>40 &#176;F</p>
                     <ul>
-                        <li>64</li>
-                        <li>40</li>
+                        <li>64 &#176;F</li>
+                        <li>40 &#176;F</li>
                     </ul>
-                </div>
-                <div class = "Wind">
-                    <h1><strong>Wind</strong></h1>
-                    <img src = "/images/wind-pointer.png" alt= "wind-pointer">
-                    <p>5 mph</p>
-                    <strong>Direction: </strong> <p>NW</p>
-                    <strong>Gusts: </strong> <p>10-12</p>
-                </div>
-                <div class = "forecast">
-                    <strong>Rain</strong>
-                </div>
-                <div class = "hourly-forecast">
+                    <p class= "feel">Feels Like 41 &#176;F</p>
+                </section><br>
+                <section class = "Wind">
+                    <h1><strong>Wind</strong></h1><br>
+                    <img id="pointer" src = "/images/wind-pointer.png" alt= "wind-pointer">
+                    <p id="speed">5 mph</p>
+                    <p><strong>Direction: </strong>NW</p>
+                    <p><strong>Gusts: </strong>10-12</p>
+                </section><br>
+                <section class = "forecast">
+                    <h1><strong>Rain</strong></h1>
+                </sect><br>
+                <section class = "hourly-forecast">
                     <h1><strong>Hourly Forecast</strong></h1>
-                    <ul>
+                    <ul id="time">
                         <li>10am: 41</li>
                         <li>11am: 41</li>
                         <li>12pm: 41</li>
@@ -59,13 +63,13 @@
                         <li>9pm: 51</li>
                         <li>10pm: 55</li>
                     </ul>
-                </div>
+                </secti>
                 </section>
                </main>
                <footer>
-                &copy;2019, The Weather Site
-               </footer>
-               <nav><ul>
+                &copy;2019 - The Weather Site
+               </footer><br>
+               <nav><ul class="Bottom">
                    <li><a href="#" title="Go to the Weather Site home page">Current</a></li>
                    <li><a href="#" title="Go to the Weather Site search">Search</a></li>
                    <li><a href="#" title="Go to the Weather Site Franklin section">Franklin</a></li>

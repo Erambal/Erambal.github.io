@@ -1,0 +1,121 @@
+/* Table of Contents
+1. Imports 
+2. General Styles
+ 2a Navigation
+ 2b Current Weather
+ 2c Wind Styles
+3. Mobile Styles
+ 3a Location Information
+ 3b 
+4. Large Screen Rules
+ */
+
+ /* 1. Imports */
+@import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+
+
+/* 2. General */
+body{
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: Sansita, sans-serif;
+    display: inline;
+}
+#header{
+    margin: 0;
+    padding: 0;
+}
+#title{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin: 10px;
+}
+#logo{
+    width: 40px;
+    display: inline;
+}
+#page-nav{
+    background-color: blue;
+    height: 50px;
+    text-align: left;
+    
+}
+ul.list{
+    margin: 0;
+    padding: 0;
+}
+.list li{
+    display: inline;
+    font-size: 12px;
+    text-align: left;
+
+}
+.Temperature  p.feel{
+    font-size: 10px;
+}
+.Temperature{
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.Temperature ul li{
+    list-style-type: none;
+    display: inline;
+    text-align: left;
+    margin:0;
+    padding: 0;
+}
+.Temperature p{
+    font-size: 60px;
+    margin: 0;
+    padding:0;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+.Wind{
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: center;
+}
+.wind #speed{
+    font-size: 20px;
+}
+.Wind p{
+    font-size: 12px;
+}
+.forecast{
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: center;
+}
+.Bottom{
+    background-color: blue;
+    text-align: center;
+    text-decoration: none;
+   
+}
+.Bottom li{
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+footer{
+    background-color: blue;
+}
+.Bottom li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  
+}
