@@ -96,6 +96,14 @@ ul{
     border-radius: 10px;
     text-align: center;
 }
+.forecast img{
+    width: 300px;
+}
+.hourly-forecast{
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: center;
+}
 .Bottom{
     background-color: blue;
     text-align: center;
