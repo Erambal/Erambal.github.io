@@ -91,6 +91,9 @@ ul{
 .Wind p{
     font-size: 12px;
 }
+#time li{
+    display: inline-block;
+}
 .forecast{
     border: solid 1px black;
     border-radius: 10px;
