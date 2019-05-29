@@ -1,17 +1,19 @@
 main{
     background-color: blue;
     padding: 1em;
-    max-width: 800px;
+  
 }
 
 main p{
-    margin:1em auto;
+    margin: 1em;
     padding: 1em;
     background-color: white;
 }
+
 #one{
-    min-width: 600px;
+  
 }
 #two{
-    max-width: 600px;
+ 
+
 }
