@@ -1,13 +1,7 @@
 /* Table of Contents
 1. Imports 
 2. General Styles
- 2a Navigation
- 2b Current Weather
- 2c Wind Styles
-3. Mobile Styles
- 3a Location Information
- 3b 
-4. Large Screen Rules
+3. Large Screen Rules
  */
 
  /* 1. Imports */
@@ -15,7 +9,7 @@
 
 
 
-/* 2. General */
+/* 2. General Styles */
 body{
     font-size: 20px;
     font-family: Helvetica, sans-serif;
@@ -71,6 +65,12 @@ ul.list{
     margin:0;
     padding: 0;
 }
+li#high{
+    color: red;
+}
+li#low{
+    color: blue;
+}
 .Temperature p{
     font-size: 60px;
     margin: 0;
@@ -85,14 +85,30 @@ ul{
     border-radius: 10px;
     text-align: center;
 }
-.wind #speed{
-    font-size: 20px;
+#container{
+    position: relative;
+}
+img #pointer{
+    position:relative;
+
+}
+ p#speed{
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 37%;
 }
 .Wind p{
     font-size: 12px;
 }
 #time li{
     display: inline-block;
+    
+}
+#time{
+    overflow: auto;
+    white-space: nowrap;
 }
 .forecast{
     border: solid 1px black;
@@ -106,6 +122,7 @@ ul{
     border: solid 1px black;
     border-radius: 10px;
     text-align: center;
+    
 }
 .Bottom{
     background-color: blue;
@@ -129,4 +146,13 @@ footer{
     color: white;
     font-size: 12px;
   
+}
+@media only screen and (min-width: 600px) {
+    p#speed{
+        font-size: 40px;
+        position: absolute;
+        text-align: center;
+        top: 15%;
+        left: 46%;
+    }
 }
