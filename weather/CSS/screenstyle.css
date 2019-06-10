@@ -23,11 +23,20 @@ h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
 }
+.page-header{
+    background-image: url("/images/clear-small.jpg");
+    background-repeat: no-repeat;
+    
+}
 #title{
     font-family: sans-serif;
     text-align: center;
     font-size: 30px;
     margin: 10px;
+}
+img#logo{
+    width: 40px;
+    padding: 5px;
 }
 #logo{
     display: inline;
