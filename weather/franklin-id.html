@@ -10,8 +10,6 @@
  <body>   
         <header>
                 <nav id="page-nav">
-
-               
                 <div id= "header">
                 <img id="logo" src="/images/logo.jpg" alt="weather-site-logo">
                 <h1 id="title">The Weather Site</h1>
@@ -21,16 +19,18 @@
                </header>
                <main id="main">
                    <section id="locationInfo">
-                       <div class= "wrapper">
-                        <header class= "page-header">
+             
+
                 <h1>Franklin, Idaho</h1>
             </header>
+            
                     <ul class="list">
                         <li><strong>Zip:</strong> 83237</li>
                         <li><strong>Elevation:</strong> 1514.246 meters</li>
                         <li><strong>Location:</strong> 111.79, 42.07</li>
                     </ul>
                    </section><br>
+                   <div id="curweather" class="clear">
                 <section class = "Temperature">
                     <h1><strong>Temperature</strong></h1>
                     <p>40&#176;F</p>
@@ -38,21 +38,22 @@
                         <li id="high">64 &#176;F</li>
                         <li id="low">40 &#176;F</li>
                     </ul>
-                    <p class= "feel">Feels Like 41 &#176;F</p>
+                    <p class= "feel">Feels Like 
+                    <span id="feelTemp"></span>
+                    &#176;F</p>
                 </section><br>
                 <section class = "Wind">
-                    <h1><strong>Wind</strong></h1><br>
-                    <div id="container">
-                    <img id="pointer" src = "/images/wind-pointer.png" alt= "wind-pointer">
-                    <p id="speed">5 mph</p>
-                </div>
+                    <h1><strong>Wind</strong></h1>
+                    <div id="dial" class="w"> 
+                    <p id="speed"></p>
+                    </div>
                     <p><strong>Direction: </strong>NW</p>
                     <p><strong>Gusts: </strong>10-12</p>
                 </section><br>
                 <section class = "forecast">
-                    <h1><strong>Clear</strong></h1><br>
-                    <img src="/images/rain.jpg" alt="rain">
-                </section><br>
+                    <img src= "/images/clear.jpg" alt="Clear Skies">
+                </section>
+                </div>
                 <section class = "hourly-forecast">
                     <h1><strong>Hourly Forecast</strong></h1>
                     <ul id="time">
@@ -85,6 +86,6 @@
                    <li><a href="#" title="Go to the Weather Site Franklin section">Franklin</a></li>
                    <li><a href="#" title="Go to the Weather Site Greenville section">Greenville</a></li>
                </ul></nav>
-               <script src="/weather/js/functions.js"></script>
+               <script src="/js/functions.js"></script>
  </body>
 </html>
