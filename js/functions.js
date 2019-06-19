@@ -84,7 +84,7 @@ switch (direction){
      break;
    }
 // Get the weather condition for images
-let conditions = "clear";
+let conditions = "rain";
 let weatherKey = getCondition(conditions);
 changeSummmaryImage(weatherKey);
 
