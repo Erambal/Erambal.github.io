@@ -210,6 +210,7 @@ footer{
     font-size: 12px;
   
 }
+/*Large screen rules*/
 @media only screen and (min-width: 600px) {
     p#speed{
         font-size: 40px;
@@ -218,5 +219,20 @@ footer{
         top: 15%;
         left: 46%;
     }
+    .clear {
+        background-image: url("/images/clear-large.jpg");
+       }
+    .fog {
+        background-image: url("/images/fog-large.jpg");
+       }
+    .clouds {
+        background-image: url("/images/clouds-large.jpg");
+       }
+    .rain {
+        background-image: url("/images/rain-large.jpg");
+       }
+    .snow {
+        background-image: url("/images/snow-large.jpg");
+       }
     
 }
