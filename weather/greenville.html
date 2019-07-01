@@ -2,60 +2,73 @@
 <html lang="en-us">
  <head>
   <meta charset="UTF-8">
-  <title>Greenville, ID | Weather Site</title>
+  <title id= "page-title"> | Weather Site</title>
   <meta name="Weather Site" content="This site shows the current weather status.">
   <meta name="viewport" content="width=device-width">
   <link href="/weather/CSS/screenstyle.css" rel="stylesheet" type="text/css" media="screen">
  </head>
- <body>  
-        <main id="main">
-
-        <header>
+ <body>
+     <section id = "status">Hold up</section>  
+     <header>
                 <nav id="page-nav">
                 <div id= "header">
                 <img id="logo" src="/images/logo.jpg" alt="weather-site-logo">
                 <h1 id="title">The Weather Site</h1>
-    
-                </div>
-                </nav>
-             
-
-                <h1>Greenville, Idaho</h1>
+    </div>
+    </nav>
+            <nav id="page1-nav"><ul class="Bottom">
+                    <li><a href="#" title="Go to the Weather Site home page">Current</a></li>
+                    <li><a href="#" title="Go to the Weather Site search">Search</a></li>
+                    <li><a href="franklin-id.html" title="Go to the Weather Site Franklin section">Franklin</a></li>
+                    <li><a href="greenville.html" title="Go to the Weather Site Greenville section">Greenville</a></li>
+                    <li><a href="springfield.html" title="Go to the Weather Site Springfield section">Springfield</a></li>
+ 
+                </ul></nav>
+                <h1 id= "contentHeading"></h1>
         </header>
+        <main id= "main-content" class ="hide">    
         <section id="locationInfo">
             
                     <ul class="list">
-                        <li><strong>Zip:</strong> 83237</li>
-                        <li><strong>Elevation:</strong> 1514.246 meters</li>
-                        <li><strong>Location:</strong> 111.79, 42.07</li>
+                        <li><strong>Zip:</strong> <span id="zip"></span></li>
+                        <li><strong>Elevation:</strong> <span id="getFeet"></span> Feet </li>                    
+                        <li><strong>Location:</strong> <span id= "longitude"></span>, <span id="latitude"></span></li>
                     </ul>
                    </section><br>
                    <div id="curweather" class="fog">
-                <section class = "Temperature">
+                        <div id = "organize">
+
+                <section id = "Temperature">
                     <h1><strong>Temperature</strong></h1>
-                    <p>40&#176;F</p>
+                    <p id="locTemp"></p> 
                     <ul>
                         <li id="high">64 &#176;F</li>
                         <li id="low">40 &#176;F</li>
                     </ul>
-                    <p class= "feel">Feels Like 
+                    <p id= "feel">Feels Like 
                     <span id="feelTemp"></span>
                     &#176;F</p>
                 </section><br>
-                <section class = "Wind">
+                <section id = "Wind">
                     <h1><strong>Wind</strong></h1>
+                    
                     <div id="dial" class="w"> 
-                    <p id="speed"></p>
                     </div>
-                    <p><strong>Direction: </strong>NW</p>
-                    <p><strong>Gusts: </strong>10-12</p>
+                    <p id="wind-speed"></p>
+                    
+
+                    <p><strong>Direction: </strong><span id='direction'></span></p>
+                    <p><strong>Gusts: </strong><span id='gusts'></span></p>
                 </section><br>
-                <section class = "forecast">
-                    <h2>Clear</h2><br>
-                    <img src= "/images/clear.jpg" alt="Clear Skies">
-                </section>
+                <section id = "forecast">
+                    <h2 id= "curCond">Clear</h2>
+                <img src= "/images/clear.jpg" alt="Clear Skies">
+             </section>
+
+            </div>
+
                 </div>
-                <section class = "hourly-forecast">
+                <section id = "hourly-forecast">
                     <h1><strong>Hourly Forecast</strong></h1>
                     <ul id="time">
                         <li>10am: 41 &#176;F |</li>
@@ -76,17 +89,14 @@
                     </ul>
                   
                 </section>
+        </main>
                <footer>
                 &copy;2019 - The Weather Site
                </footer><br>
-               <nav><ul class="Bottom">
-                   <li><a href="#" title="Go to the Weather Site home page">Current</a></li>
-                   <li><a href="#" title="Go to the Weather Site search">Search</a></li>
-                   <li><a href="franklin-id.html" title="Go to the Weather Site Franklin section">Franklin</a></li>
-                   <li><a href="greenville.html" title="Go to the Weather Site Greenville section">Greenville</a></li>
-               </ul></nav>
                <script src="/js/functions.js"></script>
-            </main>
+               <script src="/js/localdata.js"></script>
+
+            
 
  </body>
 </html>

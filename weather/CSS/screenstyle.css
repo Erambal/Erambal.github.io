@@ -19,32 +19,29 @@ h1, h2, h3, h4 {
     display: inline;
 }
 #header{
-    margin: 0;
-    padding: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: sans-serif;
 }
 .page-header{
     background-image: url("/images/clear-small.jpg");
     background-repeat: no-repeat;
     
 }
-#title{
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 30px;
-    margin: 10px;
-}
 img#logo{
-    width: 40px;
-    padding: 5px;
+    width: 70px;
+    margin: 0;
 }
 #logo{
     display: inline;
 }
 #page-nav{
     background-color: blue;
-    height: 50px;
     text-align: left;
     
+}
+.hide{
+    display: none;
 }
 #dial {
     height: 150px;
@@ -86,7 +83,7 @@ ul.list{
     padding: 0;
 }
 .list li{
-    display: inline;
+    display: inline-block;
     font-size: 12px;
     text-align: left;
 
@@ -94,6 +91,7 @@ ul.list{
 /*Current Weather*/
 #curweather {
  background-size: cover;
+ text-align: center;
 }
 
 /* Background pictures for summary */
@@ -112,16 +110,16 @@ ul.list{
 .snow {
     background-image: url("/images/snow-small.jpg");
    }
-.Temperature  p.feel{
+#Temperature  p#feel{
     font-size: 10px;
 }
-.Temperature{
+#Temperature{
     border: solid 1px black;
     border-radius: 10px;
     text-align: center;
     
 }
-.Temperature ul li{
+#Temperature ul li{
     list-style-type: none;
     display: inline;
     text-align: left;
@@ -134,7 +132,7 @@ li#high{
 li#low{
     color: blue;
 }
-.Temperature p{
+#Temperature p{
     font-size: 60px;
     margin: 0;
     padding:0;
@@ -143,10 +141,11 @@ ul{
     margin:0;
     padding: 0;
 }
-.Wind{
+#Wind{
     border: solid 1px black;
     border-radius: 10px;
     text-align: center;
+    
 }
 #container{
     position: relative;
@@ -155,16 +154,15 @@ img #pointer{
     position:relative;
 
 }
- p#speed{
-    font-size: 40px;
-    position: absolute;
+ p#wind-speed{
+    font-size: 30px;
     text-align: center;
-    top: 15%;
-    left: 37%;
+    transform: none;
+    margin-top: -92px;
+    padding-bottom: 30px;
+
 }
-.Wind p{
-    font-size: 12px;
-}
+
 #time li{
     display: inline-block;
     
@@ -173,15 +171,15 @@ img #pointer{
     overflow: auto;
     white-space: nowrap;
 }
-.forecast{
+#forecast{
     border: solid 1px black;
     border-radius: 10px;
     text-align: center;
 }
-.forecast img{
+#forecast img{
     width: 300px;
 }
-.hourly-forecast{
+#hourly-forecast{
     border: solid 1px black;
     border-radius: 10px;
     text-align: center;
@@ -212,12 +210,12 @@ footer{
 }
 /*Large screen rules*/
 @media only screen and (min-width: 600px) {
-    p#speed{
-        font-size: 40px;
-        position: absolute;
-        text-align: center;
-        top: 15%;
-        left: 46%;
+    p#wind-speed{
+    font-size: 25px;
+    margin-top: -86px;
+    padding-bottom: 40px;
+    text-align: center;
+    transform: none;
     }
     .clear {
         background-image: url("/images/clear-large.jpg");
@@ -234,5 +232,25 @@ footer{
     .snow {
         background-image: url("/images/snow-large.jpg");
        }
+    #organize{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    #Temperature{
+        width: 30%;
+        margin: .2em auto;
+
+    }
+    #Wind{
+        width:30%;
+        margin: .2em auto;
+
+    }
+    #forecast{
+        width: 30%;
+        margin: .2em auto;
+
+    }
     
 }
