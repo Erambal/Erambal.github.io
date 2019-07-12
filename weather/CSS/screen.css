@@ -1,0 +1,357 @@
+/* Table of contents \
+ * Stylesheet for Screened Devices
+ * Created by: Jose Aquino
+ 1. Imports
+ 2. General Rules
+ 3. Mobile Rules 
+ 4. Large Screen Rules 
+*****************************************************************************************************/
+
+/*1.1 Normalize Import */
+@import url('normalize.css');
+
+/* 1.2 Google Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+/* 2. General Rules */
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: helvetica, sans-serif, verdana;
+    font-size: 20px;
+    width:100%;
+}
+nav {
+    margin-top: 15px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Sansita, Eurostyle, sans-serif;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+    padding: initial;
+}
+.tile {
+    background-color: rgba(211, 211, 211, 0.5);
+    border: 1px solid;
+    border-radius: 15px;
+    text-align: center;
+    margin: 5px;
+}
+span.first{
+    color: red;
+}
+ span.second{
+     color:blue;
+}
+#curWeather {
+ 
+}
+.hide{
+    display: none;
+}
+.rain{
+    width: 90%;
+}
+
+
+#page-header {
+    background-color: skyblue;
+    height: 50px;
+    width: 100%;
+}
+#title{
+    font-size:35px;
+    font-weight: bold;
+    vertical-align: inherit;
+}
+
+#dial {
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url('/weather/images/wind-pointer.png');
+    z-index : 100;
+    margin: -.6em auto 0;
+}
+
+.n {
+    transform: rotate(0deg);
+}
+.ne {
+    transform: rotate(45deg);
+}
+.e {
+    transform: rotate(90deg);
+}
+.se {
+    transform: rotate(135deg);
+}
+.s {
+    transform: rotate(180deg);
+}
+.sw {
+    transform: rotate(225deg);
+}
+.w {
+    transform: rotate(270deg);
+}
+.nw {
+    transform: rotate(315deg);
+}
+#wind2 {
+    position: relative;
+    bottom: 105px;
+    z-index: 2;
+    margin-bottom: -70px;
+}
+#logo{
+    width:15%;
+    height: 97%;
+    vertical-align: text-bottom;
+}
+
+#locInfo ul li{
+  
+    display:inline-block;
+    padding-left: 10px;
+    border-right: solid;  
+    font-size: 12px; 
+}
+
+#locInfo ul li:last-child {
+    border-right:none;
+ }
+#hourly{
+    border: 1px solid;
+    border-radius:15px;
+    background-color:lightgray;
+    text-align: center;
+}
+#hourly p{
+    max-width: 100%;   
+    white-space: nowrap;
+    overflow: auto;
+}
+footer{
+    height: 95px;
+    width: 100%;
+    
+}
+.foot{
+    background-color: skyblue;
+    margin-top: 3px;
+}
+.navbar{
+    overflow: hidden;
+    background-color: skyblue;  
+    width: 100%
+}
+nav ul li {
+    display: block;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 11px 10px 11px;
+    text-decoration: none;
+    font-size: 17px;
+}
+main {
+    width:100%;
+}
+
+/* Large Screen Rules */
+
+@media screen and (min-width: 801px){
+    #curWeather{
+      display: flex;  
+      justify-content: space-evenly;
+      height: 600px;
+    }
+    .clear{
+        background-image: url(/weather/new-images/clear_1550.jpg);
+    }
+    .snow{
+        background-image: url(/weather/new-images/snow_1550.jpg);
+    }
+    .rainy{
+        background-image: url(/weather/new-images/rain_1550.jpg);
+    }
+    .cloud{
+        background-image: url(/weather/new-images/clouds_1550.jpg);
+    }
+    .fog{
+        background-image: url(/weather/new-images/fog_1550.jpg);
+    }
+
+    .clear2{
+        content:url(/weather/new-images/clear_440.jpg);
+        display: inline;
+    }
+    .snow2{
+        content:url(/weather/new-images/snow_440.jpg);
+        display: inline;
+    }
+    .rainy2{
+        content:url(/weather/new-images/rain_440.jpg);
+        display: inline;
+    }
+    .cloud2{
+        content:url(/weather/new-images/clouds_440.jpg);
+        display: inline;
+    }
+    .fog2{
+        content:url(/weather/new-images/fog_440.jpg);
+        display: inline;
+    }
+
+    #title{
+        font-size: 45px;
+    }
+    .tile{
+        width: 33%;
+    }
+    main {
+        height: 835px;
+    }
+    #logo {
+        width: 5%;
+    }
+    #nav2 {
+        display: none;
+    }
+    footer {
+        height: 24px;
+    }
+    nav {
+        margin-top: 0px;
+    }
+    .subtitle {
+        margin-top: 30%;
+    }
+}
+/*mobile rules*/
+@media screen and (max-width:450px){
+    #logo{
+        width: 15%;
+        height: 97%;
+        vertical-align: text-bottom;
+    }
+    .clear{
+        background-image: url(/weather/new-images/clear_600.jpg);
+    }
+    .snow{
+        background-image: url(/weather/new-images/snow_600.jpg);
+    }
+    .rainy{
+        background-image: url(/weather/new-images/rain_600.jpg);
+    }
+    .cloud{
+        background-image: url(/weather/new-images/clouds_600.jpg);
+    }
+    .fog{
+        background-image: url(/weather/new-images/fog_600.jpg);
+    }
+    #title{
+        font-size: 35px;
+    }
+
+    .clear2{
+        content:url(/weather/new-images/clear_270.jpg);
+        display: inline;
+    }
+    .snow2{
+        content:url(/weather/new-images/snow_270.jpg);
+        display: inline;
+    }
+    .rainy2{
+        content:url(/weather/new-images/rain_270.jpg);
+        display: inline;
+    }
+    .cloud2{
+        content:url(/weather/new-images/clouds_270.jpg);
+        display: inline;
+    }
+    .fog2{
+        content:url(/weather/new-images/fog_270.jpg);
+        display: inline;
+    }
+
+    #locName{
+        font-size:25px;
+    }
+    footer{
+        height:183px;
+    }
+    .navbar{
+        height:145px;
+        display:none;
+    }
+    #nav2{
+        display: block;
+    }
+    nav ul li {
+    float: none;
+    margin-bottom: -4px;
+    }
+    .tile{
+        margin: 0.2em 9px;
+    }
+    main {
+        height: 1060px;
+    }    
+   
+}
+
+@media screen and (min-width:451px) and (max-width:800px){
+    .rain{
+        height: 429px;
+        width: 90%;
+    }
+    .clear{
+        background-image: url(/weather/images/clear.jpg);
+    }
+    .snow{
+        background-image: url(/weather/images/snow.jpg);
+    }
+    .rainy{
+        background-image: url(/weather/images/rain.jpg);
+    }
+    .cloud{
+        background-image: url(/weather/images/clouds.jpg);
+    }
+    .fog{
+        background-image: url(/weather/images/fog.jpg);
+    }
+
+    .clear2{
+        content:url(/weather/new-images/clear_440.jpg);
+        display: inline;
+    }
+    .snow2{
+        content:url(/weather/new-images/snow_440.jpg);
+        display: inline;
+    }
+    .rainy2{
+        content:url(/weather/new-images/rain_440.jpg);
+        display: inline;
+    }
+    .cloud2{
+        content:url(/weather/new-images/clouds_440.jpg);
+        display: inline;
+    }
+    .fog2{
+        content:url(/weather/new-images/fog_440.jpg);
+        display: inline;
+    }
+
+    main {
+        height: 1180px;
+    }
+
+    #nav1 {
+        display: none;
+    }
+    
+}
