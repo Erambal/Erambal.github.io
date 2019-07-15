@@ -94,7 +94,7 @@ html {
  
  .container{
  background-color: #ffff;
- width: 85%;
+ width: 98%;
  margin-left: auto;
  margin-right: auto;
  }
@@ -179,11 +179,6 @@ width:50%;
     color: red;
  }
 
- .reviewSection{
-   width: unset;
-   float: unset;
-}
- 
  @media screen and (min-width: 700px) {
     /* #reviewSection{
         width: 100%;
@@ -202,6 +197,13 @@ width:50%;
      width: 50%;
      float:right;
    }
+
+   .container{
+      background-color: #ffff;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      }
  }
  
  
