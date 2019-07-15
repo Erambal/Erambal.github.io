@@ -13,10 +13,11 @@ Nav.addEventListener('click', function(evt){
               // case "Home":
            console.log(name);
            evt.preventDefault();
-           let content2 = document.getElementById('product-page');
-          content2.setAttribute('class', '');
            let  content =  document.getElementById('home-main');
            content.setAttribute('class', 'hide');
+           let content2 = document.getElementById('product-page');
+          content2.setAttribute('class', '');
+         
        break;
       case "Home":
           let content3 = document.getElementById('home-main');

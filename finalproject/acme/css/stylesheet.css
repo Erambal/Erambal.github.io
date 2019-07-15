@@ -23,7 +23,6 @@ html {
  h2 {
     color:#de2226;
  }
- 
  /********** Body *********/
  #backgroundImage{
     background-image: url(../images/site/background.jpg);
@@ -58,6 +57,12 @@ html {
     height: 40px;
     align-items: center;
  
+ }
+ a{   
+   text-decoration: none;
+   list-style-type: none;
+   color: white;
+
  }
  /******** Welcome to Acme Container ***********/
  #banner1{
@@ -100,10 +105,6 @@ html {
  #reviewRecipes{
     width: 100%;
  }
- 
- 
- 
- 
  .secondTitle {
     margin-top:0px;
     margin-bottom: 0px;
@@ -172,12 +173,16 @@ width:50%;
  }
  #path{
     width:40%;
-    text-align: center;
  }
  #price-font{
     font-size: 35px;
     color: red;
  }
+
+ .reviewSection{
+   width: unset;
+   float: unset;
+}
  
  @media screen and (min-width: 700px) {
     /* #reviewSection{
