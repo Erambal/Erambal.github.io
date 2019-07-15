@@ -5,8 +5,6 @@
    background-color: #990033
    background-color: #de2226
    background-color: #ffffff
-
-
   
 */
 
@@ -14,7 +12,11 @@
 html {
     box-sizing: border-box;
  }
- 
+
+.hide{
+   display: none;
+}
+
  html * {
     box-sizing: border-box;
  }
@@ -99,14 +101,8 @@ html {
     width: 100%;
  }
  
- .reviewSection{
-    width: 50%;
-    float:right;
- }
  
- .recipes{
-    width: 50%;
- }
+ 
  
  .secondTitle {
     margin-top:0px;
@@ -123,24 +119,87 @@ html {
  #recipesList{
     width: 50%;
     flex: 0 1 50%;
-    border: solid 1px #000;
+    /* border: solid 1px #000; */
     text-align: center;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
+    padding: 1%;
+ }
+
+ .recColor{
+    background-color: lightgray;
  }
  
  footer{
     font-size: 12px;
    text-align: center;
+   padding: 2%;
  
  }
+
+ #line {
+    background-color: black;
+width: 95%;
+height: 5px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5%;
+ }
+
  #copyright{
    text-align: center;
  }
+
+
+   /*********Child Pages*********/
+
+   #content{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   } 
+
+#childpicture{
+   width:50%;
+}
+
+#itemReviews{
+width:50%;
+}
+ /* #picture{
+    width: 200px;
+ } */
+
+ #info{
+   width: 50%;
+   float:right;
+ }
+ #path{
+    width:40%;
+    text-align: center;
+ }
+ #price-font{
+    font-size: 35px;
+    color: red;
+ }
  
- @media screen and (max-width: 700px) {
-    #reviewSection{
+ @media screen and (min-width: 700px) {
+    /* #reviewSection{
         width: 100%;
-    }
+    } */
+
+    .recipes{
+      width: 50%;
+   }
+
+   .reviewSection{
+      width: 50%;
+      float:right;
+   }
+
+   #info{
+     width: 50%;
+     float:right;
+   }
  }
  
  
