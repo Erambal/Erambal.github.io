@@ -24,16 +24,11 @@ html {
     color:#de2226;
  }
  /********** Body *********/
- #backgroundImage{
-    /* background-image: url(../images/site/background.jpg); */
-    background-repeat: none;
-    background-size: 100%;
- }
  
  body {
     font-family: Helvetica, sans-serif;
     background-image: url('../images/site/background.jpg');
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: 100%;
  }
  
@@ -81,6 +76,7 @@ html {
      padding: 10px;
     list-style-type: none;
     color: red;
+    font-size: 30%;
     
  }
  
@@ -258,5 +254,6 @@ width:50%;
    padding: 10px;
   list-style-type: none;
   color: red;
+  font-size: 100%;
 }
 }
