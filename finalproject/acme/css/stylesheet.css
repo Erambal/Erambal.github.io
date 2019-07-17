@@ -123,7 +123,7 @@ html {
     color: blue;
     text-decoration: underline;
  }
- #recipesList{
+ .recipesList{
     width: 50%;
     flex: 0 1 50%;
     /* border: solid 1px #000; */
@@ -189,7 +189,7 @@ width:50%;
     color: red;
  }
 
- #bold{
+ .bold{
     font-weight: bold;
  }
 
