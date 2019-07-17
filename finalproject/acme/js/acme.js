@@ -17,8 +17,7 @@ Nav.addEventListener('click', function(evt){
            content.setAttribute('class', 'hide');
            let content2 = document.getElementById('product-page');
           content2.setAttribute('class', '');
-         
-       break;
+         break;
       case "Home":
           let content3 = document.getElementById('home-main');
           content3.setAttribute('class', '');
