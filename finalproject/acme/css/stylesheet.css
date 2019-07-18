@@ -67,6 +67,9 @@ html {
     width: 100%;
     /* height: 200px; */
  }
+ #product-page{
+    background-color: white;
+ }
  #banner_container{
     display: flex;
     justify-content: flex-end;
