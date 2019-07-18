@@ -77,11 +77,10 @@ html {
     list-style-type: none;
     color: red;
     font-size: 70%;
-    opacity: 1;
- }
- #background-box{
-    background-color: lightslategray;
+    background-color: #61c9ee;
     opacity: .9;
+    margin: 0;
+    padding: 0;
  }
  /******** Logo Container ***********/
  #logo-div{
