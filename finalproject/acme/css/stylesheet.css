@@ -76,10 +76,13 @@ html {
      padding: 10px;
     list-style-type: none;
     color: red;
-    font-size: 50%;
-    
+    font-size: 70%;
+    opacity: 1;
  }
- 
+ #background-box{
+    background-color: lightslategray;
+    opacity: .9;
+ }
  /******** Logo Container ***********/
  #logo-div{
     background-color: #ffff;
