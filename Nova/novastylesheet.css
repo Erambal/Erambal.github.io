@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:600|Fjalla+One&display=swap');
+/*
+font-family: 'Asap', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+*/
+#backgroundImage{
+    background-image: url(../Nova/Pictures/10560548_283966805140166_892488075634762889_o.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px; 
+}
+nav{
+background-color: rgba(255,255,255,0.5);
+width: 100%;
+margin-top: 200px;
+margin-bottom: 325px;
+}
+nav #links{
+    display: flex;
+    flex: row;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    font-size: 20px;
+    height: 40px;
+    font:"Lato", sans-serif;
+    font-weight: bolder;
+    color: #0a69ad;
+}
+nav #links a{
+    text-decoration: none;
+    font:"Lato", sans-serif;
+}
+nav #links a:visited{
+    color: #0a69ad;
+}
+#welcome{
+    font-size: 100px;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+}
+#instruction{
+  text-align: center;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("/Nova/Pictures/Resized_IMG_20190302_071810_153.jpeg");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("/Nova/Pictures/Resized952019062795133531.jpg");
+    min-height: 100%;
+  }
+  
+  .bgimg-3 {
+    background-image: url("/Nova/Pictures/Resized952019040995065741.jpg");
+    min-height: 100%;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #f57222;
+  }
+  
+  .caption span.border {
+    background-color: #f57222;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  #contact-info1{
+    display: inline-flex;
+    margin: 10px;
+  }
+  #contact-info{
+    width: 100%;
+    float: right;
+    margin: 10px;
+  }
+  .clearfix{
+    clear:both;
+  }
+  #questions{
+    background-color: #777;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+  }
+  footer{
+      margin:0;
+      padding:0;
+      color: white;
+      background-color: #111;
+
+  }
+  p#copyright{
+      margin: 0px;
+      padding: 0px;
+  }
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
