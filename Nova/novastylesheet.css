@@ -109,6 +109,14 @@ body, html {
   .clearfix{
     clear:both;
   }
+  #write-info{
+    text-align: left;
+    list-style-type: none;
+    border: 5px solid #777;
+  }
+  li{
+    list-style-type: none;
+  }
   #questions{
     background-color: #777;
     text-align: center;
@@ -132,4 +140,59 @@ body, html {
     .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
     }
+  }
+
+  @media screen and (max-width: 1250px){
+    nav{
+      background-color: rgba(255,255,255,0.5);
+      width: 100%;
+      margin-top: 350px;
+      margin-bottom: 50px;
+      }
+    #welcome{
+      font-size: 50px;
+      text-align: center;
+      margin: 2px;
+      padding: 10px;
+}
+@media screen and (max-width: 900px){
+  nav{
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    margin-top: 225px;
+    margin-bottom: 50px;
+    }
+  #welcome{
+    font-size: 35px;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+}
+@media screen and (max-width: 600px){
+  nav{
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    }
+  #welcome{
+    font-size: 30px;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+}
+nav #links{
+  display: flex;
+  flex: row;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  font-size: 15px;
+  height: 40px;
+  font:"Lato", sans-serif;
+  font-weight: bolder;
+  color: #0a69ad;
+}
+  }
+}
   }
