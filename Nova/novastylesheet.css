@@ -146,7 +146,7 @@ body, html {
     nav{
       background-color: rgba(255,255,255,0.5);
       width: 100%;
-      margin-top: 360px;
+      margin-top: 350px;
       margin-bottom: 50px;
       }
     #welcome{
@@ -159,7 +159,7 @@ body, html {
   nav{
     background-color: rgba(255,255,255,0.5);
     width: 100%;
-    margin-top: 230px;
+    margin-top: 225px;
     margin-bottom: 50px;
     }
   #welcome{
@@ -172,7 +172,7 @@ body, html {
   nav{
     background-color: rgba(255,255,255,0.5);
     width: 100%;
-    margin-top: 210px;
+    margin-top: 200px;
     margin-bottom: 50px;
     }
   #welcome{
