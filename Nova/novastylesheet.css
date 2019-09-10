@@ -12,8 +12,8 @@ font-family: 'Fjalla One', sans-serif;
 nav{
 background-color: rgba(255,255,255,0.5);
 width: 100%;
-margin-top: 200px;
-margin-bottom: 325px;
+margin-top: 15%;
+margin-bottom: 20%;
 }
 nav #links{
     display: flex;
@@ -146,8 +146,8 @@ body, html {
     nav{
       background-color: rgba(255,255,255,0.5);
       width: 100%;
-      margin-top: 350px;
-      margin-bottom: 50px;
+      margin-top: 15%;
+      margin-bottom: 20%;
       }
     #welcome{
       font-size: 50px;
@@ -159,11 +159,11 @@ body, html {
   nav{
     background-color: rgba(255,255,255,0.5);
     width: 100%;
-    margin-top: 225px;
-    margin-bottom: 50px;
+    margin-top: 15%;
+    margin-bottom: 20%;
     }
   #welcome{
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     margin: 2px;
     padding: 10px;
@@ -172,11 +172,11 @@ body, html {
   nav{
     background-color: rgba(255,255,255,0.5);
     width: 100%;
-    margin-top: 200px;
-    margin-bottom: 50px;
+    margin-top: 15%;
+    margin-bottom: 20%;
     }
   #welcome{
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin: 2px;
     padding: 10px;
