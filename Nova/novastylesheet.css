@@ -196,3 +196,11 @@ nav #links{
   }
 }
   }
+  @supports (-ms-accelerator: true) { /* Edge only */
+
+    nav #links {
+      justify-content: space-evenly;
+        /* you can also add some other adjustments to size, margins etc to get the same positioning */
+    }
+
+}
